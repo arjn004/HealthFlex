@@ -282,8 +282,8 @@ const Home = () => {
                                         />
 
                                         {/* Timer Content */}
-                                        <Text>{timer.name} - {timer.remainingTime}s</Text>
-                                        <Text>Status: {timer.status}</Text>
+                                        <Text style={{color: "black"}}>{timer.name} - {timer.remainingTime}s</Text>
+                                        <Text style={{color: "black"}}>Status: {timer.status}</Text>
                                         <View style={styles.buttonRow}>
                                             <TouchableOpacity onPress={() => handleStart(category, timer.id)} style={styles.startButton}>
                                                 <Text>Start</Text>
@@ -360,7 +360,7 @@ const styles = StyleSheet.create({
         padding: 5,
         borderRadius: 12,
         height: 40,
-        width: 100,
+        width: "25%",
         alignItems: "center",
         justifyContent: "center",
         borderColor: "black",
@@ -371,7 +371,7 @@ const styles = StyleSheet.create({
         padding: 5,
         borderRadius: 12,
         height: 40,
-        width: 100,
+        width: "25%",
         alignItems: "center",
         justifyContent: "center",
         borderColor: "black",
@@ -382,7 +382,7 @@ const styles = StyleSheet.create({
         padding: 5,
         borderRadius: 12,
         height: 40,
-        width: 100,
+        width: "25%",
         alignItems: "center",
         justifyContent: "center",
         borderColor: "black",
@@ -448,7 +448,8 @@ const styles = StyleSheet.create({
     picker: { flex: 1,
          height: 55,
           backgroundColor: "#e3f2fd",
-           borderRadius: 5 
+           borderRadius: 5, 
+           color: "black",
         },
 });
 

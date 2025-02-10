@@ -78,9 +78,11 @@ const NewTimer = () => {
                 />
 
         </TouchableOpacity>
+        <Text style={{color: "black", fontSize: 24, fontWeight: 500}}>Add New Timer</Text>
       <TextInput
         style={styles.input}
         placeholder="Enter timer name"
+        placeholderTextColor="grey"
         value={name}
         onChangeText={setName}
       />
@@ -89,6 +91,7 @@ const NewTimer = () => {
       <TextInput
         style={styles.input}
         placeholder="Enter duration (seconds)"
+        placeholderTextColor="grey"
         keyboardType="numeric"
         value={duration}
         onChangeText={setDuration}
@@ -98,6 +101,7 @@ const NewTimer = () => {
       <TextInput
         style={styles.input}
         placeholder="Enter category"
+        placeholderTextColor="grey"
         value={category}
         onChangeText={setCategory}
       />
